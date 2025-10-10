@@ -1,0 +1,39 @@
+{
+  "name": "whatsapp-playwright-bdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --require-module ts-node/register --require tests/steps/**/*.ts --format json:reports/report.json tests/features/**/*.feature && npm run allure:generate && npm run allure:open",
+    "report": "ts-node report-generator.ts",
+    "test:with-report": "npm run test && npm run report",
+    "run:all": "npm run clean-reports && npm run test && npm run report",
+    "clean-reports": "rimraf reports && mkdir reports && mkdir reports/html",
+    "test:smoke": "cucumber-js --require-module ts-node/register --require features/**/*.ts --tags '@smoke' --format json:reports/report.json features/**/*.feature",
+    "test:AIRunner": "npx cucumber-js --require-module ts-node/register --require tests/steps/**/*.ts --require tests/support/**/*.ts --tags \"@AIRunner\" --format json:reports/report.json tests/features/**/*.feature",
+    "allure:generate": "allure generate allure-results --clean -o allure-report --single-file",
+    "allure:open": "allure open allure-report",
+    "test:MenuRunner": "npx cucumber-js --require-module ts-node/register --require tests/steps/**/*.ts --require tests/support/**/*.ts --tags \"@MenuRunner\" --format json:reports/report.json tests/features/**/*.feature",
+    "test:drop1": "npx cucumber-js --require-module ts-node/register --require tests/steps/**/*.ts --require tests/support/**/*.ts --tags \"@drop1\" --format json:reports/report.json tests/features/**/*.feature"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.55.0",
+    "allure-commandline": "^2.34.1",
+    "allure-cucumberjs": "^3.4.1",
+    "allure-playwright": "^3.4.1",
+    "cucumber-html-formatter": "^3.1.0",
+    "multiple-cucumber-html-reporter": "^3.9.3",
+    "playwright": "^1.55.0",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "openai": "^5.20.0"
+  }
+}

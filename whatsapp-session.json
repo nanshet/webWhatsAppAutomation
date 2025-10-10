@@ -1,0 +1,231 @@
+{
+  "cookies": [
+    {
+      "name": "wa_ul",
+      "value": "dfe4c1a3-e42b-4247-bea2-405fa6f04d7d",
+      "domain": ".web.whatsapp.com",
+      "path": "/",
+      "expires": 1764266257.121612,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "wa_web_lang_pref",
+      "value": "en_GB",
+      "domain": ".web.whatsapp.com",
+      "path": "/",
+      "expires": 1758909484,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://web.whatsapp.com",
+      "localStorage": [
+        {
+          "name": "1V9L0BaYXyXvsUJeuYLd+w==",
+          "value": "{\"chatLockSupportLevel\":2}"
+        },
+        {
+          "name": "ChatThreadLoggingSecret",
+          "value": "\"ZFwAPrmmbRueLZiyVsat/ZTfgqK5C6zZSygDcdDWwYU=\""
+        },
+        {
+          "name": "WANoiseInfo",
+          "value": "{\"privKey\":\"wumAWsdrnLwnHGIDIeybeIzrCaz6ZxzZQaoRVkl3rjcywXNMHtKWk0JWQMDeDack\",\"pubKey\":\"Y1OxQH0VoYIJVvr5s3eAT/InxL8ox1Okx5Xd8K7XGU0eGEnWDR1PaumEOJRuDhVu\",\"recoveryToken\":\"0XUUDw6eAEA33TRd29pNtGxm54y5cA8Y9W18Vo+yDe8=\",\"certificateChainBuffer\":\"yQZKua+Xlnz5jlXgwzEoit2rEzyVzoEUjkRhoIIQHeeJG3HBYpGMNOv3gMwWZBd/jlnJ6pFsuaN+1chyFMGL7V7oX+QVCK3c7Xq8bE2Pasz0gLQPPLFCH2uURauqkIFFdsbCPcffV9X18mBL6Hcdpf4fJA6DQeoEaA4T8wzxXUyOZaFlDfvzzlQxHpIvuyCytTXIiohDmqMQN9JgA6aTNxVmlXqeEGN6igjJrJmIYpKTVNFBKChj+D+s39qXwpuSZ9NbSozFGjgN1AqIzxuSTDdjjK/LP2AP0v/h7h5l6b8=\"}"
+        },
+        {
+          "name": "WAMms4Conn",
+          "value": "{\"queryStartTime\":\"2025-08-29T17:58:00.168Z\",\"auth\":\"Ac2h5gvIwKI4TNfbQgXEOgPh8p2gI7XhloXwCAHHL4xY4A\",\"hosts\":[{\"hostname\":\"media.ffjr1-1.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"195.229.137.33\",\"ip6\":\"2001:8f8:0:128:face:b00c:3333:7020\"}],\"fallback\":{\"hostname\":\"media.fdxb3-3.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"194.170.165.160\",\"ip6\":\"2001:8f8:0:126:face:b00c:3333:7020\"}]},\"type\":\"primary\",\"rules\":[{\"download\":[\"video\",\"image\",\"gif\",\"sticker\",\"thumbnail-image\",\"thumbnail-video\"]},{\"downloadBuckets\":[\"105\"]}]},{\"hostname\":\"media.ffjr1-2.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"195.229.137.97\",\"ip6\":\"2001:8f8:0:129:face:b00c:3333:7020\"}],\"fallback\":{\"hostname\":\"media.fdxb3-1.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"194.170.165.35\",\"ip6\":\"2001:8f8:0:124:face:b00c:3333:7020\"}]},\"type\":\"primary\",\"rules\":[{\"download\":[\"video\",\"image\",\"gif\",\"sticker\",\"thumbnail-image\",\"thumbnail-video\"]},{\"downloadBuckets\":[\"110\"]}]},{\"hostname\":\"media.ffjr1-2.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"195.229.137.97\",\"ip6\":\"2001:8f8:0:129:face:b00c:3333:7020\"}],\"fallback\":{\"hostname\":\"media.fdxb3-4.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"194.170.165.224\",\"ip6\":\"2001:8f8:0:127:face:b00c:3333:7020\"}]},\"type\":\"primary\",\"rules\":[{\"download\":[\"video\",\"image\",\"gif\",\"sticker\",\"thumbnail-image\",\"thumbnail-video\"]},{\"downloadBuckets\":[\"101\"]}]},{\"hostname\":\"media.ffjr1-3.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"195.229.137.162\",\"ip6\":\"2001:8f8:0:12a:face:b00c:3333:7020\"}],\"fallback\":{\"hostname\":\"media.fdxb3-2.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"194.170.165.97\",\"ip6\":\"2001:8f8:0:125:face:b00c:3333:7020\"}]},\"type\":\"primary\",\"rules\":[{\"download\":[\"video\",\"image\",\"gif\",\"sticker\",\"thumbnail-image\",\"thumbnail-video\"]},{\"downloadBuckets\":[\"111\"]}]},{\"hostname\":\"media.ffjr1-3.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"195.229.137.162\",\"ip6\":\"2001:8f8:0:12a:face:b00c:3333:7020\"}],\"fallback\":{\"hostname\":\"media.ffjr1-6.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"5.195.172.99\",\"ip6\":\"2001:8f8:0:15:face:b00c:3333:7020\"}]},\"type\":\"primary\",\"rules\":[{\"download\":[\"video\",\"image\",\"gif\",\"sticker\",\"newsletter-image\",\"newsletter-video\",\"newsletter-thumbnail-link\",\"newsletter-sticker\",\"newsletter-document\",\"newsletter-gif\",\"newsletter-ptt\",\"newsletter-audio\",\"thumbnail-image\",\"thumbnail-video\"]},{\"downloadBuckets\":[\"0\"]}]},{\"hostname\":\"media.ffjr1-4.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"195.229.137.224\",\"ip6\":\"2001:8f8:0:12b:face:b00c:3333:7020\"}],\"fallback\":{\"hostname\":\"media.fdxb3-1.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"194.170.165.35\",\"ip6\":\"2001:8f8:0:124:face:b00c:3333:7020\"}]},\"type\":\"primary\",\"rules\":[{\"download\":[\"video\",\"image\",\"gif\",\"sticker\",\"thumbnail-image\",\"thumbnail-video\"]},{\"downloadBuckets\":[\"106\"]}]},{\"hostname\":\"media.ffjr1-4.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"195.229.137.224\",\"ip6\":\"2001:8f8:0:12b:face:b00c:3333:7020\"}],\"fallback\":{\"hostname\":\"media.fdxb3-3.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"194.170.165.160\",\"ip6\":\"2001:8f8:0:126:face:b00c:3333:7020\"}]},\"type\":\"primary\",\"rules\":[{\"download\":[\"video\",\"image\",\"gif\",\"sticker\",\"thumbnail-image\",\"thumbnail-video\"]},{\"downloadBuckets\":[\"107\"]}]},{\"hostname\":\"media.ffjr1-5.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"5.195.172.35\",\"ip6\":\"2001:8f8:0:14:face:b00c:3333:7020\"}],\"fallback\":{\"hostname\":\"media.fdxb3-2.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"194.170.165.97\",\"ip6\":\"2001:8f8:0:125:face:b00c:3333:7020\"}]},\"type\":\"primary\",\"rules\":[{\"download\":[\"video\",\"image\",\"gif\",\"sticker\",\"thumbnail-image\",\"thumbnail-video\"]},{\"downloadBuckets\":[\"100\"]}]},{\"hostname\":\"media.ffjr1-6.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"5.195.172.99\",\"ip6\":\"2001:8f8:0:15:face:b00c:3333:7020\"}],\"fallback\":{\"hostname\":\"media.fdxb3-3.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"194.170.165.160\",\"ip6\":\"2001:8f8:0:126:face:b00c:3333:7020\"}]},\"type\":\"primary\",\"rules\":[{\"download\":[\"video\",\"image\",\"gif\",\"sticker\",\"thumbnail-image\",\"thumbnail-video\"]},{\"downloadBuckets\":[\"104\"]}]},{\"hostname\":\"media.ffjr1-6.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"5.195.172.99\",\"ip6\":\"2001:8f8:0:15:face:b00c:3333:7020\"}],\"fallback\":{\"hostname\":\"media.fdxb3-4.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"194.170.165.224\",\"ip6\":\"2001:8f8:0:127:face:b00c:3333:7020\"}]},\"type\":\"primary\",\"rules\":[{\"download\":[\"video\",\"image\",\"gif\",\"sticker\",\"thumbnail-image\",\"thumbnail-video\"]},{\"downloadBuckets\":[\"102\"]}]},{\"hostname\":\"media.ffjr7-1.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"5.195.172.226\",\"ip6\":\"2001:8f8:0:122:face:b00c:3333:7020\"}],\"fallback\":{\"hostname\":\"media.fdxb3-2.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"194.170.165.97\",\"ip6\":\"2001:8f8:0:125:face:b00c:3333:7020\"}]},\"type\":\"primary\",\"rules\":[{\"download\":[\"video\",\"image\",\"gif\",\"sticker\",\"thumbnail-image\",\"thumbnail-video\"]},{\"downloadBuckets\":[\"108\"]}]},{\"hostname\":\"media.ffjr8-1.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"5.195.172.163\",\"ip6\":\"2001:8f8:0:121:face:b00c:3333:7020\"}],\"fallback\":{\"hostname\":\"media.fdxb3-1.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"194.170.165.35\",\"ip6\":\"2001:8f8:0:124:face:b00c:3333:7020\"}]},\"type\":\"primary\",\"rules\":[{\"download\":[\"video\",\"image\",\"gif\",\"sticker\",\"thumbnail-image\",\"thumbnail-video\"]},{\"downloadBuckets\":[\"109\"]}]},{\"hostname\":\"media.ffjr8-1.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"5.195.172.163\",\"ip6\":\"2001:8f8:0:121:face:b00c:3333:7020\"}],\"fallback\":{\"hostname\":\"media.fdxb3-4.fna.whatsapp.net\",\"class\":\"fna\",\"ips\":[{\"ip4\":\"194.170.165.224\",\"ip6\":\"2001:8f8:0:127:face:b00c:3333:7020\"}]},\"type\":\"primary\",\"rules\":[{\"download\":[\"video\",\"image\",\"gif\",\"sticker\",\"thumbnail-image\",\"thumbnail-video\"]},{\"downloadBuckets\":[\"103\"]}]},{\"hostname\":\"media-sin11-1.cdn.whatsapp.net\",\"class\":\"pop\",\"ips\":[{\"ip4\":\"57.144.145.32\",\"ip6\":\"2a03:2880:f348:120:face:b00c:0:167\"}],\"fallback\":{\"hostname\":\"media-mrs2-1.cdn.whatsapp.net\",\"class\":\"pop\",\"ips\":[{\"ip4\":\"157.240.195.56\",\"ip6\":\"2a03:2880:f242:c8:face:b00c:0:167\"}]},\"type\":\"primary\",\"rules\":[{\"download\":[\"ppic\",\"md-app-state\",\"thumbnail-document\",\"biz-cover-photo\",\"ptt\",\"audio\",\"document\",\"thumbnail-link\",\"md-msg-hist\"]},{\"upload\":[\"image\",\"sticker\",\"ptt\",\"audio\",\"document\",\"video\",\"gif\",\"ppic\",\"md-app-state\",\"md-msg-hist\",\"template\",\"thumbnail-image\",\"thumbnail-video\",\"thumbnail-document\",\"thumbnail-link\",\"payment-bg-image\",\"product\",\"product-catalog-image\",\"biz-cover-photo\",\"preview\",\"newsletter-audio\",\"newsletter-document\",\"newsletter-image\",\"newsletter-gif\",\"newsletter-ptt\",\"newsletter-sticker\",\"newsletter-thumbnail-link\",\"newsletter-video\",\"sticker-pack\",\"thumbnail-sticker-pack\",\"music-artwork\"]},{\"downloadBuckets\":[\"0\"]}]},{\"hostname\":\"mmg.whatsapp.net\",\"class\":\"pop\",\"ips\":[{}],\"type\":\"fallback\",\"rules\":[{\"download\":[\"image\",\"sticker\",\"ptt\",\"audio\",\"document\",\"video\",\"gif\",\"ppic\",\"md-app-state\",\"md-msg-hist\",\"template\",\"thumbnail-image\",\"thumbnail-video\",\"thumbnail-document\",\"thumbnail-link\",\"payment-bg-image\",\"product\",\"product-catalog-image\",\"biz-cover-photo\",\"preview\",\"newsletter-audio\",\"newsletter-document\",\"newsletter-image\",\"newsletter-gif\",\"newsletter-ptt\",\"newsletter-sticker\",\"newsletter-thumbnail-link\",\"newsletter-video\",\"sticker-pack\",\"thumbnail-sticker-pack\",\"music-artwork\"]},{\"upload\":[\"image\",\"sticker\",\"ptt\",\"audio\",\"document\",\"video\",\"gif\",\"ppic\",\"md-app-state\",\"md-msg-hist\",\"template\",\"thumbnail-image\",\"thumbnail-video\",\"thumbnail-document\",\"thumbnail-link\",\"payment-bg-image\",\"product\",\"product-catalog-image\",\"biz-cover-photo\",\"preview\",\"newsletter-audio\",\"newsletter-document\",\"newsletter-image\",\"newsletter-gif\",\"newsletter-ptt\",\"newsletter-sticker\",\"newsletter-thumbnail-link\",\"newsletter-video\",\"sticker-pack\",\"thumbnail-sticker-pack\",\"music-artwork\"]}]}],\"ttl\":300000,\"maxBuckets\":12,\"authTTL\":21600000}"
+        },
+        {
+          "name": "WAHistorySyncStatus",
+          "value": "{\"initialCompleted\":true}"
+        },
+        {
+          "name": "WAWebEncKeySalt",
+          "value": "\"YvfSAzUu5sUBltmlbqgIAz92byrOd2de+ivVXytKSekbrHTEdajZXQv3a65NX+hqd++AVXHcOJ1rjiBYlWN7AiGfJbohyYh/nz3cmkvZ8P8HHdhLkXwr9SKDNK7YoDjr7cNACHYb8e9NG1vmfXsGn1PI3s7FCN1gb28KyIYqmmA=\""
+        },
+        {
+          "name": "WABlocklistHash",
+          "value": "\"1754150947405318\""
+        },
+        {
+          "name": "WAWebTimeSpentSession",
+          "value": "{\"id\":863562218,\"startTimestampMs\":1756490286875,\"lastActivityTimestampMs\":1756490286875,\"cumulativeBitsSet\":0,\"sequenceId\":-1,\"relativeTimestampMs\":0,\"tsTimestampMs\":1756490287877,\"unifiedSessionId\":null}"
+        },
+        {
+          "name": "Session",
+          "value": "glmacu:1756490291542"
+        },
+        {
+          "name": "A/LhwLhpTnM/GoK1/wcbxg==",
+          "value": "{\"views\":0}"
+        },
+        {
+          "name": "AbpropsWebRefreshId",
+          "value": "4"
+        },
+        {
+          "name": "dYILzstjXMAzPi/U7nXHVw==",
+          "value": "true"
+        },
+        {
+          "name": "critical_data_synced",
+          "value": "true"
+        },
+        {
+          "name": "WASyncdPrimaryAllowsAllMutations",
+          "value": "true"
+        },
+        {
+          "name": "BEbaXMwbBPV76RJpJm/pSA==",
+          "value": "{\"isDismissed\":false,\"firstSeenTime\":1756490286}"
+        },
+        {
+          "name": "UBO+LEcekc2+8qfEDbWMug==",
+          "value": "false"
+        },
+        {
+          "name": "WADailyStatsStartTime",
+          "value": "1756490277391"
+        },
+        {
+          "name": "bXF9loha6/8Vmdf+c62skQ==",
+          "value": "true"
+        },
+        {
+          "name": "ibI6wAQNVoUJZAcINEBkUw==",
+          "value": "false"
+        },
+        {
+          "name": "WANoiseInfoIv",
+          "value": "[\"rJKMYOSwpzJmwLTAD3lm9g==\",\"wFJB5S3WhbT9cY7eD7RIwg==\",\"z4In/WUcE1Lka06wbRU5dA==\",\"wc2LTxg7ab9mqCoJjNC0oA==\"]"
+        },
+        {
+          "name": "MNXWQkrA/CekGMkBj4Uk9Q==",
+          "value": "false"
+        },
+        {
+          "name": "last-wid-md",
+          "value": "\"971567796806:51@c.us\""
+        },
+        {
+          "name": "y4ghGNFbizKY2joHsul5Zg==",
+          "value": "false"
+        },
+        {
+          "name": "G5xAwHvqg/xhxDMZuIRpEA==",
+          "value": "\"nainashetty12\""
+        },
+        {
+          "name": "ChatThreadLoggingOffset",
+          "value": "56464"
+        },
+        {
+          "name": "mutex-ping-timeout",
+          "value": "1"
+        },
+        {
+          "name": "BusinessProfileLidTableMigrationComplete",
+          "value": "true"
+        },
+        {
+          "name": "MutexBlockStrategy",
+          "value": "0"
+        },
+        {
+          "name": "gK06hy8opMH0WqUil2iy1A==",
+          "value": "{\"readReceipts\":\"none\",\"profilePicture\":\"contacts\",\"about\":\"contacts\",\"online\":\"all\",\"lastSeen\":\"none\",\"groupAdd\":\"all\",\"callAdd\":\"all\",\"messages\":\"all\"}"
+        },
+        {
+          "name": "WALangPhonePref",
+          "value": "\"en-AE\""
+        },
+        {
+          "name": "LRya01bfjgANni/GdzxUgw==",
+          "value": "false"
+        },
+        {
+          "name": "WARoutingInfo",
+          "value": "{\"domain\":\"fb\",\"edgeRouting\":\"CAkICA==\"}"
+        },
+        {
+          "name": "MdRecentMailboxAgeDays",
+          "value": "0"
+        },
+        {
+          "name": "X77O1b0TTYbgYrtLgG46pw==",
+          "value": "false"
+        },
+        {
+          "name": "WAShouldCheckContactSyncStatus",
+          "value": "true"
+        },
+        {
+          "name": "WAUnknownID",
+          "value": "\"unknown-322250428\""
+        },
+        {
+          "name": "WACachedProfilePicEURL",
+          "value": "\"https://pps.whatsapp.net/v/t61.24694-24/458924455_4051833691805318_6257574840734395215_n.jpg?ccb=11-4&oh=01_Q5Aa2QEVL5gjHerOxRxWSzPoWVxjZNNPuJT1nq-emr9CChwftw&oe=68BF0527&_nc_sid=5e03e0&_nc_cat=105\""
+        },
+        {
+          "name": "sE3mjXJxU+rhS6TFDhBXvQ==",
+          "value": "[{\"id\":\"1756490277391\",\"startTime\":1756490277391,\"pttCancelBroadcast\":0,\"pttCancelGroup\":0,\"pttCancelIndividual\":0,\"pttCancelNewsletter\":0,\"pttDraftReviewBroadcast\":0,\"pttDraftReviewGroup\":0,\"pttDraftReviewIndividual\":0,\"pttDraftReviewNewsletter\":0,\"pttFastplaybackBroadcast\":0,\"pttFastplaybackGroup\":0,\"pttFastplaybackIndividual\":0,\"pttFastplaybackNewsletter\":0,\"pttLockBroadcast\":0,\"pttLockGroup\":0,\"pttLockIndividual\":0,\"pttLockNewsletter\":0,\"pttPlaybackBroadcast\":0,\"pttPlaybackGroup\":0,\"pttPlaybackIndividual\":0,\"pttPlaybackNewsletter\":0,\"pttRecordBroadcast\":0,\"pttRecordGroup\":0,\"pttRecordIndividual\":0,\"pttRecordNewsletter\":0,\"pttSendBroadcast\":0,\"pttSendGroup\":0,\"pttSendIndividual\":0,\"pttSendNewsletter\":0,\"pttPausedRecordBroadcast\":0,\"pttPausedRecordGroup\":0,\"pttPausedRecordIndividual\":0,\"pttPausedRecordNewsletter\":0,\"pttOutOfChatBroadcast\":0,\"pttOutOfChatGroup\":0,\"pttOutOfChatIndividual\":0,\"pttOutOfChatNewsletter\":0,\"goldenBoxContactNarrativeAppearCount\":0,\"goldenBoxContactDialogAppearCount\":0,\"goldenBoxContactDialogSelectCount\":0,\"goldenBoxGroupNarrativeAppearCount\":0,\"goldenBoxGroupDialogAppearCount\":0,\"goldenBoxGroupDialogSelectCount\":0,\"infoScreenContactNarrativeAppearCount\":0,\"infoScreenContactDialogAppearCount\":0,\"infoScreenContactDialogSelectCount\":0,\"infoScreenGroupNarrativeAppearCount\":0,\"infoScreenGroupDialogAppearCount\":0,\"infoScreenGroupDialogSelectCount\":0,\"chatsListNarrativeAppearCount\":0,\"chatsListDialogAppearCount\":0,\"chatsListDialogSelectCount\":0,\"statusListNarrativeAppearCount\":0,\"statusListDialogAppearCount\":0,\"statusListDialogSelectCount\":0,\"callingScreenAudioNarrativeAppearCount\":0,\"callingScreenAudioDialogAppearCount\":0,\"callingScreenAudioDialogSelectCount\":0,\"prinaLastEvent\":0,\"communityTabGroupNavigations\":0,\"communityTabToHomeViews\":0,\"communityTabViews\":0,\"communityTabViewsViaContextMenu\":0,\"communityNoActionTabViews\":0,\"communityHome\":{},\"pnhCagActions\":{},\"animatedEmojiSend\":0,\"singleEmojiSend\":0,\"emojiReply\":0,\"kicGroupNotificationTaps\":0,\"kicGroupNotifications\":0,\"kicNotificationTaps\":0,\"kicNotifications\":0,\"chatLockFolderChatsCount\":0,\"chatLockFolderOpenCount\":0,\"chatLockLockFolderHidden\":null,\"chatLockNewAddChatCount\":0,\"chatLockNewRemoveChatCount\":0,\"chatLockSecretCodeActive\":null}]"
+        },
+        {
+          "name": "ChatThreadLoggingLastUploadedStartTs",
+          "value": "0"
+        },
+        {
+          "name": "E+RO51/MMsvw5JQqph6lBw==",
+          "value": "true"
+        },
+        {
+          "name": "jh336d1APbLhRKpNjDjIcQ==",
+          "value": "\"{\\\"120363403216712961@g.us\\\":\\\"1:MwjvUql8\\\",\\\"919833793931-1407346541@g.us\\\":\\\"1:ZF8Pgcan\\\",\\\"120363042173268447@g.us\\\":\\\"1:sR/WLIm5\\\",\\\"120363186116446812@g.us\\\":\\\"1:TBL07b9d\\\",\\\"120363400292402580@g.us\\\":\\\"1:bV2ZILfJ\\\",\\\"919819150505-1378892532@g.us\\\":\\\"1:mgZL3XtL\\\",\\\"971565998959-1622865920@g.us\\\":\\\"1:wpG3HZgv\\\",\\\"120363301927570164@g.us\\\":\\\"1:tY5KowrD\\\",\\\"120363157864462785@g.us\\\":\\\"1:xuatwb9y\\\",\\\"918056327414-1467197420@g.us\\\":\\\"1:1Cp3+P0T\\\",\\\"916361967560-1536680274@g.us\\\":\\\"1:f8UH0y49\\\",\\\"120363322401247244@g.us\\\":\\\"1:MNmtnmSm\\\",\\\"919503966849-1456547583@g.us\\\":\\\"1:JpXgyLsI\\\",\\\"120363041684126003@g.us\\\":\\\"1:IsA4PLoV\\\",\\\"919890166560-1512186875@g.us\\\":\\\"1:QwiyNqu5\\\",\\\"120363021419086337@g.us\\\":\\\"1:TcqS/6rN\\\",\\\"120363380174902359@g.us\\\":\\\"1:mbR1rB97\\\",\\\"120363047215288959@g.us\\\":\\\"1:tAdwQyUD\\\",\\\"120363301157692626@g.us\\\":\\\"1:fe8Kl7gg\\\",\\\"120363166493151112@g.us\\\":\\\"1:Uergre62\\\",\\\"120363097004063297@g.us\\\":\\\"1:NcuC6xu9\\\",\\\"120363320694672421@g.us\\\":\\\"1:SK0gseFN\\\",\\\"971506521885-1602083521@g.us\\\":\\\"1:7WRAYla3\\\",\\\"919998111363-1361944442@g.us\\\":\\\"1:XWWgZSl0\\\",\\\"917878958787-1401864417@g.us\\\":\\\"1:DPyyA204\\\",\\\"971527853411-1596220839@g.us\\\":\\\"1:62vfilS+\\\",\\\"917567807982-1468834189@g.us\\\":\\\"1:cH155+Z+\\\",\\\"120363314265226307@g.us\\\":\\\"1:kQdRh0U0\\\",\\\"919987780890-1402896467@g.us\\\":\\\"1:GaPdBSOc\\\",\\\"919723650224-1385135042@g.us\\\":\\\"1:s0uHWmbG\\\",\\\"919601113793-1400151612@g.us\\\":\\\"1:dNjwLxt9\\\",\\\"120363418094043928@g.us\\\":\\\"1:jiwT1wSv\\\",\\\"919979123934-1404042527@g.us\\\":\\\"1:MUURLdL6\\\",\\\"918425007926-1395735271@g.us\\\":\\\"1:dlLpQ8ZH\\\",\\\"120363155621431673@g.us\\\":\\\"1:kC/I+xp7\\\",\\\"120363414037408351@g.us\\\":\\\"1:hDYIvPiR\\\",\\\"120363361772590995@g.us\\\":\\\"1:Xv4v9EkS\\\",\\\"120363325096637039@g.us\\\":\\\"1:Xv4v9EkS\\\",\\\"120363303026630273@g.us\\\":\\\"1:+j29+u24\\\",\\\"120363263359537534@g.us\\\":\\\"1:+0JUDOMb\\\",\\\"120363218048310608@g.us\\\":\\\"1:EBYO6zt5\\\",\\\"120363168649720420@g.us\\\":\\\"1:Xv4v9EkS\\\",\\\"120363153474175018@g.us\\\":\\\"1:xoJE+aPE\\\",\\\"120363144919754940@g.us\\\":\\\"1:aDq5Cvo7\\\",\\\"919890166560-1636127214@g.us\\\":\\\"1:Stk7iUzH\\\",\\\"917506657585-1506547672@g.us\\\":\\\"1:NgEWzOq8\\\",\\\"260972673055-1611138725@g.us\\\":\\\"1:cd9O+TwK\\\",\\\"919821271107-1419412336@g.us\\\":\\\"1:v7pA2GEa\\\",\\\"919890166560-1605517980@g.us\\\":\\\"1:AmYCOftI\\\",\\\"918123729407-1604409657@g.us\\\":\\\"1:IoxqGe+J\\\",\\\"923248895525-1573822859@g.us\\\":\\\"1:IT3/Woz/\\\",\\\"919172169452-1590173895@g.us\\\":\\\"1:+Zx9ZIZv\\\",\\\"919833793931-1580919929@g.us\\\":\\\"1:Xv4v9EkS\\\",\\\"971523843260-1574943407@g.us\\\":\\\"1:05s/fveA\\\",\\\"919033940992-1509899627@g.us\\\":\\\"1:Dqgtgjhj\\\",\\\"923461555033-1558594628@g.us\\\":\\\"1:Yi6tVKY1\\\",\\\"971523843260-1549368108@g.us\\\":\\\"1:Xv4v9EkS\\\",\\\"971524788294-1538023014@g.us\\\":\\\"1:Yi6tVKY1\\\",\\\"971557528721-1545337875@g.us\\\":\\\"1:+icY21u8\\\",\\\"971557528721-1540538775@g.us\\\":\\\"1:41eWb7Bn\\\",\\\"919913334222-1417271599@g.us\\\":\\\"1:o86avrDT\\\",\\\"919099866739-1364023739@g.us\\\":\\\"1:obt80kcp\\\",\\\"971567796806-1528549258@g.us\\\":\\\"1:Xv4v9EkS\\\",\\\"971562819903-1520529882@g.us\\\":\\\"1:k46PQ9nu\\\",\\\"971568175927-1521557117@g.us\\\":\\\"1:fTOxc+/2\\\",\\\"917506657585-1512554543@g.us\\\":\\\"1:bMG0etXS\\\",\\\"917506657585-1508334337@g.us\\\":\\\"1:Xv4v9EkS\\\",\\\"919725096761-1367732840@g.us\\\":\\\"1:IMsMWbxU\\\",\\\"919768129827-1493736482@g.us\\\":\\\"1:L0it3SaT\\\",\\\"919890166560-1492360351@g.us\\\":\\\"1:SyyiT3c2\\\",\\\"919586633259-1434991152@g.us\\\":\\\"1:S+D6u46O\\\",\\\"918097844316-1474973674@g.us\\\":\\\"1:Xv4v9EkS\\\",\\\"917506364250-1474108557@g.us\\\":\\\"1:wjQiciqe\\\",\\\"918980064919-1393602674@g.us\\\":\\\"1:vdVh/VgB\\\",\\\"919769290555-1406174766@g.us\\\":\\\"1:Xv4v9EkS\\\",\\\"919768934961-1435319907@g.us\\\":\\\"1:6vz5JpI/\\\",\\\"919426539237-1371211290@g.us\\\":\\\"1:Xv4v9EkS\\\",\\\"918980064919-1415115792@g.us\\\":\\\"1:Xv4v9EkS\\\",\\\"919768129827-1381382824@g.us\\\":\\\"1:yUv8L30W\\\",\\\"918980064919-1404753853@g.us\\\":\\\"1:E7HBQptF\\\",\\\"919586633259-1399256393@g.us\\\":\\\"1:zH7TcY0a\\\",\\\"919586633259-1369626062@g.us\\\":\\\"1:eJsy7W+A\\\",\\\"918401442239-1352732162@g.us\\\":\\\"1:P16BeZmL\\\",\\\"918401442239-1352732246@g.us\\\":\\\"1:bQ32Eqbd\\\"}\""
+        },
+        {
+          "name": "WALid",
+          "value": "\"87561598976021:51@lid\""
+        },
+        {
+          "name": "abprops",
+          "value": "{\"abKey\":\"TUZ,7we,20v,cW,2tP,12n,R0,2fe,TA,pk,X9,5I,6I,9c,7g,C2\",\"refresh\":\"86986\",\"lastSyncTime\":1756490281091}"
+        },
+        {
+          "name": "MdSyncActionsActionSanitized",
+          "value": "true"
+        },
+        {
+          "name": "WAWebWAMBeaconingSettings",
+          "value": "\"[{\\\"key\\\":\\\"regular\\\",\\\"ts\\\":1756490269,\\\"value\\\":null},{\\\"key\\\":\\\"realtime\\\",\\\"ts\\\":1756490282,\\\"value\\\":null}]\""
+        },
+        {
+          "name": "MdPairingTimestamp",
+          "value": "1756490277"
+        },
+        {
+          "name": "WebEncKeySalt",
+          "value": "\"YvfSAzUu5sUBltmlbqgIAz92byrOd2de+ivVXytKSekbrHTEdajZXQv3a65NX+hqd++AVXHcOJ1rjiBYlWN7AiGfJbohyYh/nz3cmkvZ8P8HHdhLkXwr9SKDNK7YoDjr7cNACHYb8e9NG1vmfXsGn1PI3s7FCN1gb28KyIYqmmA=\""
+        },
+        {
+          "name": "abprops-refresh-id",
+          "value": "10"
+        },
+        {
+          "name": "WaInitialHistorySynced",
+          "value": "\"true\""
+        },
+        {
+          "name": "whatsapp-mutex",
+          "value": "\"x393509506:init_1756490261864\""
+        }
+      ]
+    }
+  ]
+}
