@@ -1,16 +1,19 @@
 
-import {Browser, BrowserContext, chromium, } from 'playwright'
+import { Then, When } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import {Given, Then, When} from '@cucumber/cucumber';
-import { evaluateBotResponse } from '../../utils/evaluateResponse';
 import fs from 'fs';
 import path from 'path';
-import {getQuestionsFromModule} from '../../utils/messsageLoader';
+import { Browser } from 'playwright';
+import { v4 as uuidv4 } from "uuid";
 import { logMessage } from '../../utils/chatLogger';
+import { evaluateBotResponse } from '../../utils/evaluateResponse';
+import { CustomWorld } from '../support/world';
 const { allure } = require('allure-cucumberjs');
-import {CustomWorld} from '../support/world';
 
 let browser:Browser;
+
+const responses: { index: number; conversationId: string; text: string; screenshotPath: string }[] = [];
+
 
 //let context :BrowserContext;
 
@@ -218,10 +221,10 @@ Then('I wait for service request list to appear', {timeout: 50000},async functio
   await this.page.waitForTimeout(5000);
 });
 
-When('I send message {string}', async function (msg: string) {
+When('I send message {string}', {timeout: 50000},async function (msg: string) {
   await this.page.fill('div[aria-placeholder="Type a message"]', msg);
   await this.page.keyboard.press('Enter');
-  await this.page.waitForTimeout(3000);
+  await this.page.waitForTimeout(5000);
   logMessage('user', msg);
 
 //  await this.attach(`📨 Sent message [${msg}]: ${msg}`, 'text/plain');
@@ -294,5 +297,317 @@ Then('I wait for loans list and select the loan from the list', {timeout: 50000}
 
   }
   
+  await this.page.waitForTimeout(5000);
+});
+
+
+
+
+// When('I send {string} message {int} times and capture responses', {timeout: 8000000}, async function (msg:string, count: number) {
+//   const screenshotsDir = path.join("reports", "screenshots");
+//   if (!fs.existsSync(screenshotsDir)) fs.mkdirSync(screenshotsDir, { recursive: true });
+
+//   for (let i = 0; i < count; i++) {
+//     console.log(`📤 Sending message #${i + 1}`);
+
+//     // Send message
+//     await this.page.fill('div[aria-placeholder="Type a message"]', msg);
+//     await this.page.keyboard.press('Enter');
+//     await this.page.waitForTimeout(15000);
+//     logMessage('user', msg);
+
+
+//     let pleaseText = "";
+
+// try {
+//   const lastIncoming = this.page.locator('div.message-in').last();
+
+//   // Wait until last message contains "Please" or timeout after 5s
+//   await lastIncoming.waitFor({ 
+//     state: 'visible', 
+//     timeout: 600000 
+//   });
+
+//   const text = await lastIncoming.textContent();
+//   if (text?.includes("Please")) {
+//     pleaseText = text.trim();
+//     console.log("💬 Optional intermediate message found:", pleaseText);
+//   } else {
+//     console.log("ℹ️ 'Please' message not found in last message.");
+//   }
+// } catch (err) {
+//   console.log("ℹ️ 'Please' message did not appear, continuing...");
+// }
+//  await this.page.waitForTimeout(30000);
+
+//     // Wait for bot response
+
+//     await this.page.waitForSelector('.message-in.focusable-list-item', { timeout: 8000000 });
+
+  
+//       // Wait for the last incoming bot message to appear
+//      const botMsg = await this.page.waitForSelector(
+//       '(//div[contains(@class,"message-in")]//span[contains(@class,"selectable-text")])[last()]',
+//         { timeout: 800000 }
+//       );
+
+//      // Get message text
+//      const text = (await botMsg.textContent())?.trim() || "No response";
+
+//      console.log("💬 Latest Bot Response:", text);
+
+//      const screenshotPath = path.join(screenshotsDir, `response_${i + 1}.png`);
+
+//      const chatElement = await this.page.$('div#main'); // chat area
+//      let buf: Buffer;
+
+//      if (chatElement) {
+//      buf = await chatElement.screenshot({ path: screenshotPath });
+//      } else {
+//      buf = await this.page.screenshot({ path: screenshotPath, fullPage: false });
+//      }
+
+// // Attach to report (Cucumber/Allure)
+//      await this.attach(buf, 'image/png');
+
+//     responses.push({
+//       index: i + 1,
+//       text,
+//       screenshotPath,
+//     });
+
+//     console.log(`✅ Captured Response #${i + 1}: ${text}`);
+//   }
+
+//   // Save data to JSON for reference
+//   fs.writeFileSync("reports/accountBalanceResponses.json", JSON.stringify(responses, null, 2));
+// });
+
+
+
+// Then("I should generate HTML report with screenshots",{timeout: 8000000}, async function () {
+//   console.log("📄 Generating HTML report with screenshots...");
+
+//   const html = `
+//   <html>
+//     <head>
+//       <title>Account Balance Bot Response Report</title>
+//       <style>
+//         body {
+//           font-family: Arial, sans-serif;
+//           background: #f9fafc;
+//           padding: 20px;
+//         }
+//         h2 {
+//           color: #007bff;
+//         }
+//         table {
+//           width: 100%;
+//           border-collapse: collapse;
+//           margin-top: 20px;
+//         }
+//         th, td {
+//           border: 1px solid #ccc;
+//           padding: 10px;
+//           text-align: left;
+//           vertical-align: top;
+//         }
+//         th {
+//           background-color: #007bff;
+//           color: white;
+//         }
+//         img {
+//           width: 250px;
+//           border-radius: 8px;
+//           box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+//         }
+//         tr:nth-child(even) { background: #f2f2f2; }
+//       </style>
+//     </head>
+//     <body>
+//       <h2>Account Balance Bot Response Report (100 Iterations)</h2>
+//       <table>
+//         <tr>
+//           <th>#</th>
+//           <th>Bot Response</th>
+//           <th>Screenshot</th>
+//         </tr>
+//         ${responses
+//           .map(
+//             (r) => `
+//           <tr>
+//             <td>${r.index}</td>
+//             <td>${r.text}</td>
+//             <td><img src="${path.relative("reports", r.screenshotPath)}" alt="Response Screenshot ${r.index}"></td>
+//           </tr>`
+//           )
+//           .join("")}
+//       </table>
+//     </body>
+//   </html>`;
+
+//   fs.writeFileSync("reports/accountBalanceReport.html", html);
+//   console.log("✅ HTML report generated: reports/accountBalanceReport.html");
+// });
+
+
+Then("I should generate HTML report with screenshots",{timeout: 8000000}, async function () {
+  console.log("📄 Generating HTML report with embedded screenshots...");
+
+  const html = `
+  <html>
+    <head>
+      <title>Account Balance Bot Response Report</title>
+      <style>
+        body { font-family: Arial, sans-serif; background: #f9fafc; padding: 20px; }
+        h2 { color: #007bff; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; vertical-align: top; }
+        th { background-color: #007bff; color: white; }
+        img { width: 250px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+        tr:nth-child(even) { background: #f2f2f2; }
+      </style>
+    </head>
+    <body>
+      <h2>Account Balance Bot Response Report (${responses.length} Iterations)</h2>
+      <table>
+        <tr>
+          <th>#</th>
+          <th>Bot Response</th>
+          <th>Screenshot</th>
+        </tr>
+        ${responses
+          .map((r) => {
+            // Convert screenshot to base64
+            const imgBuffer = fs.readFileSync(r.screenshotPath);
+            const base64 = imgBuffer.toString('base64');
+            return `
+              <tr>
+                <td>${r.index}</td>
+                <td>${r.text}</td>
+                <td><img src="data:image/png;base64,${base64}" alt="Response ${r.index}"/></td>
+              </tr>
+            `;
+          })
+          .join("")}
+      </table>
+    </body>
+  </html>
+  `;
+
+  fs.writeFileSync("reports/accountBalanceReport.html", html);
+  console.log("✅ HTML report generated with embedded screenshots: reports/accountBalanceReport.html");
+});
+
+When('I send {string} message {int} times and capture responses',{ timeout: 8000000 },async function (msg: string, count: number) {
+    const screenshotsDir = path.join("reports", "screenshots");
+    if (!fs.existsSync(screenshotsDir))
+      fs.mkdirSync(screenshotsDir, { recursive: true });
+
+    for (let i = 0; i < count; i++) {
+      // ✅ Generate a unique conversation ID for this iteration
+      const conversationId = `conv_${i + 1}_${Date.now()}_${uuidv4().slice(0, 8)}`;
+      console.log(`📤 Sending message #${i + 1} | Conversation ID: ${conversationId}`);
+
+      // ✅ Send the same message, but include unique conversation ID (optional)
+      const messageToSend = `${msg}`;
+      await this.page.fill('div[aria-placeholder="Type a message"]', messageToSend);
+      await this.page.keyboard.press("Enter");
+
+      await this.page.waitForTimeout(15000);
+      logMessage("user", messageToSend);
+
+      // --- Optional intermediate “Please...” message ---
+      let pleaseText = "";
+      try {
+        const lastIncoming = this.page.locator("div.message-in").last();
+        await lastIncoming.waitFor({ state: "visible", timeout: 600000 });
+        const text = await lastIncoming.textContent();
+        if (text?.includes("Please")) {
+          pleaseText = text.trim();
+          console.log("💬 Optional intermediate message found:", pleaseText);
+        } else {
+          console.log("ℹ️ 'Please' message not found in last message.");
+        }
+      } catch {
+        console.log("ℹ️ 'Please' message did not appear, continuing...");
+      }
+
+      await this.page.waitForTimeout(15000);
+
+      // --- Wait for bot response ---
+      await this.page.waitForSelector(".message-in.focusable-list-item", { timeout: 8000000 });
+
+      const botMsg = await this.page.waitForSelector(
+        '(//div[contains(@class,"message-in")]//span[contains(@class,"selectable-text")])[last()]',
+        { timeout: 800000 }
+      );
+
+      const text = (await botMsg.textContent())?.trim() || "No response";
+      console.log(`💬 Latest Bot Response [${conversationId}]: ${text}`);
+
+      // --- Capture screenshot ---
+      const screenshotPath = path.join(
+        screenshotsDir,
+        `response_${i + 1}_${conversationId}.png`
+      );
+      const chatElement = await this.page.$("div#main");
+      const buf = chatElement
+        ? await chatElement.screenshot({ path: screenshotPath })
+        : await this.page.screenshot({ path: screenshotPath, fullPage: false });
+
+      await this.attach(buf, "image/png");
+
+      responses.push({
+        index: i + 1,
+        conversationId,
+        text,
+        screenshotPath,
+      });
+
+      console.log(`✅ Captured Response #${i + 1}: ${text}`);
+
+      await this.page.waitForTimeout(5000);
+    }
+
+    fs.writeFileSync(
+      "reports/accountBalanceResponses.json",
+      JSON.stringify(responses, null, 2)
+    );
+  }
+);
+
+
+
+///this is dynamic button it clicked as the options are changing
+Then('I click on {string} dynamic Menu options', { timeout: 50000 }, async function (this: CustomWorld,msg: string) {
+  // Wait for the chat view with the service prompt
+  await this.page.waitForSelector(
+    `//span[contains(text(),"Tap below to explore all our services and get started right away")]/ancestor::div[@id="main"]`,
+    { timeout: 10000 }
+  );
+
+  // XPath to match all possible dynamic buttons
+  const dynamicButtonXPath = `//div[@id="main"]//button[
+    normalize-space(text())="${msg}" 
+      or @title="${msg}"
+  ]`;
+
+   await this.page.waitForSelector(dynamicButtonXPath,
+    { timeout: 10000 }
+  );
+  // Count matching buttons
+  const buttons = this.page.locator(dynamicButtonXPath);
+  const count = await buttons.count();
+
+  if (count === 0) {
+    throw new Error('❌ No dynamic button appeared.');
+  }
+
+  // Click the last button (latest one in chat)
+  await buttons.nth(count - 1).click();
+  console.log('🟢 Clicked the latest dynamic menu button');
+
+  // Optional wait for next bot message
   await this.page.waitForTimeout(5000);
 });

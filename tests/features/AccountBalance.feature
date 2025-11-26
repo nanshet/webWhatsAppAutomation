@@ -50,3 +50,11 @@ Feature: Account Balance
     When I send message 0 from module "Accountsbalance"
 
 
+
+@drop1
+ Scenario: Send "Account Balance" message 100 times to verify bot response
+    Given I open Whats Web
+    Then I search for the "Meta ENBD New"
+    And I selected the contact "Meta ENBD New"
+    When I send "Credit Card Balance" message 50 times and capture responses
+    Then I should generate HTML report with screenshots

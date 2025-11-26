@@ -764,7 +764,7 @@ Scenario: Customer with 1 Loan with Meta in AI Flow[LIV]
     Then Bot should respond with "you don’t have any active loans"
 
 
-@drop1
+
     Scenario: Customer with closed loan Meta in AI Flow[EBI]
   
     Given I open Whats Web

@@ -182,7 +182,7 @@ Then('I click on {string} options',{timeout: 50000}, async function (this: Custo
 
 Then('I click on accounts subMenu options', {timeout: 50000},async function (this: CustomWorld) {
   await this.page.waitForSelector(`//span[contains(text(),"Please select a account to check Account summary")]`, { timeout: 10000 });
-  const buttons = await this.page.locator(`//button[contains(@title,"Please select a acc…")]`);
+  const buttons = await this.page.locator(`//button[contains(@title,"Explore Services")]`);
   const count = await buttons.count();
 
   for (let i = count - 1; i >= 0; i--) {
@@ -202,7 +202,7 @@ Then('I click on accounts subMenu options', {timeout: 50000},async function (thi
 Then('I select an account {string}', {timeout: 50000}, async function (this: CustomWorld,accountNumber:string)  {
   await this.page.waitForSelector(`//span[contains(text(),"Please select a account to check Account summary")]`, { timeout: 10000 });
   await this.page.waitForTimeout(5000);
-  const buttons = await this.page.locator(`//span[text()="${accountNumber}"]`);
+  const buttons = await this.page.locator(`//div[text()="${accountNumber}"]`);
   const count = await buttons.count();
 
   for (let i = count - 1; i >= 0; i--) {
@@ -213,9 +213,7 @@ Then('I select an account {string}', {timeout: 50000}, async function (this: Cus
       break;
     }
   }
-  await this.page.waitForTimeout(5000)
-  const screenshot = await this.page.screenshot();
-  await this.attach(screenshot, 'image/png');
+  await this.page.waitForTimeout(5000);
 
 });
 

@@ -1,4 +1,4 @@
-import { BeforeAll, AfterAll, Before, After, AfterStep, BeforeStep } from '@cucumber/cucumber';
+import { BeforeAll, AfterAll, Before, After, AfterStep, BeforeStep,setDefaultTimeout  } from '@cucumber/cucumber';
 import { CustomWorld } from './world';
 import { BrowserContext,Page } from 'playwright';
 
@@ -7,8 +7,10 @@ const CHAT_SELECTOR = 'div#main';
 let globalContext:BrowserContext;
 let globalPage:Page;
 
+setDefaultTimeout(3600000); 
+
 // // Launch WhatsApp once for all scenarios
-BeforeAll({ timeout: 300000 },async () => {
+BeforeAll({ timeout: 600000 },async () => {
   const result = await CustomWorld.init(); // ✅ call init() from world
   globalContext = result.context;
   globalPage = result.page;
@@ -68,3 +70,5 @@ After(async function (this: CustomWorld) {
 AfterAll(async () => {
   if (globalContext) await globalContext.close();
 });
+
+

@@ -9,6 +9,7 @@ module.exports = {
       'ts-node/register',
       'tests/steps/**/*.ts',
       'tests/support/**/*.ts'
+      
     ],
     format: [
       'json:reports/report.json',   // cucumber json for multiple-cucumber-html-reporter
